@@ -1,0 +1,47 @@
+main{
+    margin-top: 1em;
+    /* border: 5px solid #f00; */
+}
+
+div{
+    display: inline-block;
+    font-family: LRT Oksana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+h2, h3, p{
+    text-align: center;
+}
+
+h3{
+    margin-top: 0.4em;
+}
+
+p{
+    margin-bottom: 0.2em;
+}
+
+i{
+    font-size: 1.5em;
+    color: #616161;
+}
+
+img:hover{
+    opacity: 0.8;
+}
+
+#pia{
+    margin-left: 5%;
+}
+
+#matthieu, #matz, #marianne{
+    margin-left: 4%;
+}
+
+#pia div:last-child, #matthieu div:last-child, #matz div:last-child, #marianne div:last-child{
+    margin-left: 45%;
+}

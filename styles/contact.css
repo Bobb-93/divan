@@ -1,0 +1,44 @@
+address{
+    font-family: LRT Oksana, sans-serif;
+    font-style: initial;
+}
+
+a{
+    text-decoration: none;
+    color: #000;  
+}
+
+iframe{
+    float: left;
+    margin: auto 4%;
+    height: 350px;
+    width: 557px;
+}
+
+main{
+    margin-top: 2em;
+    margin-left: 3em;
+    font-size: 1.3em;
+}
+
+i{
+    padding-top: 0.2em;
+    font-size: 1.5em;
+    color: #636363;
+}
+
+a[href^="mailto"] {
+    font-size: 2em;
+}
+
+.fa-tumblr-square:hover{
+    color: #2E4A67;
+}
+
+.fa-youtube-square:hover{
+    color: #f00;
+}
+
+.fa-google-plus-square:hover{
+    color: #DF493A;
+}

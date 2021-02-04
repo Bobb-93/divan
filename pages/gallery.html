@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="keywords" content="divan, gallery, logo, menu, focused image, images, slideshow">
+    <meta name="description" content="Галерия">
+    <meta name="author" content="Boris Yakimov">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/pages.css">
+    <link rel="stylesheet" href="../styles/gallery.css">
+    <title>Gallery</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="home"><a href="../index.html">Home</a></li>
+            <li id="news"><a href="news.html">News</a></li>
+            <li id="about-us"><a href="about_us.html">About us</a></li>
+            <li id="services"><a href="services.html">Services</a>
+                <ul>
+                    <li class="box pages-box" id="consulting"><a href="consulting.html">Consulting</a></li>
+                    <li class="box pages-box" id="furnishing"><a href="furnishing.html">Furnishing</a></li>
+                    <li class="box pages-box" id="procurement"><a href="procurement.html">Procurement</a></li>
+                    <li class="box pages-box" id="interior-detailing"><a href="interior-detailing.html">Interior Detailing</a></li>
+                </ul>
+            </li>
+            <li id="gallery"><a href="#">Gallery</a></li>
+            <li id="contact"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div id="logo"><a href="../index.html"><img src="../images/main/logo.png" alt="logo"></a></div> 
+        <h1>GALLERY</h1>
+    </header>
+    <hr>
+    <main>        
+        <h2 id="image-header">WHITE WASHED FLOOR</h2>
+        <div class="arrow left-arrow"></div>
+        <div id="focused-image">
+            <img src="../images/gallery/white-washed-floors.png" alt="White Washed Floor">
+        </div>
+        <div class="arrow right-arrow"></div>
+        <div class="image rectangle" id="white-washed-floors">
+            <img src="../images/gallery/white-washed-floors.png" alt="White Washed Floor">
+        </div>
+        <div class="image rectangle" id="living-room">
+            <img src="../images/gallery/Photos-Of-Modern-Living-Room-Interior-Design-Ideas-10.png" alt="Modern Living Room">
+        </div>
+        <div class="image bottom-image rectangle" id="scandinavian-design">
+            <img src="../images/gallery/Scandinavian-Design-10.png" alt="Scandinavian Design">
+        </div>
+        <div class="image bottom-image rectangle" id="home-interior">
+            <img src="../images/gallery/modern-home-interior.png" alt="Modern home Interior">
+        </div>
+        <div class="image bottom-image rectangle" id="alpine">
+            <img src="../images/gallery/hotel-lounge-alpine.png" alt="Hotel Lounge Alpine">
+        </div>
+        <div class="image bottom-image rectangle" id="summer-home-1">
+            <img src="../images/gallery/summer-home-1.png" alt="Summer Home I">
+        </div>
+        <div class="image bottom-image rectangle" id="summer-home-2">
+            <img src="../images/gallery/summer-home-2.png" alt="Summer Home II">
+        </div>
+        <div class="image bottom-image rectangle" id="dining-table">
+            <img src="../images/gallery/scandinavian-design-dining-table-with-chairs.png" alt="Dining Table with Chairs">
+        </div>
+        <div class="image bottom-image rectangle" id="desk">
+            <img src="../images/gallery/desk.png" alt="Desk">
+        </div>
+        <div class="image bottom-image rectangle" id="rustic-kitchen">
+            <img src="../images/gallery/rustic-kitchen.png" alt="Rustic Kitchen">
+        </div>
+        <div class="image bottom-image rectangle" id="greenhouse">
+            <img src="../images/gallery/greenhouse.png" alt="Greenhouse">
+        </div>
+        <div class="image bottom-image rectangle" id="kitchen-idea">
+            <img src="../images/gallery/Small-Scandinavian-kitchen-idea.png" alt="Scandinavian Kitchen Idea">
+        </div>
+        <div class="image bottom-image rectangle" id="garden">
+            <img src="../images/gallery/garden.png" alt="garden">
+        </div>
+        <div class="image rectangle" id="bedroom">
+            <img src="../images/gallery/bedroom.png" alt="Bedroom">
+        </div>
+        <div class="image rectangle" id="pool">
+            <img src="../images/gallery/pool.png" alt="Pool">
+        </div>
+    </main>
+
+    <footer>
+        <div id="logo-2"><a href="../index.html"><img src="../images/main/logo-2.png" alt="logo"></a></div>
+        <p>Interior design studio. All rights reserved. Design by Vladimir Todorov. Website written by Boris Yakimov.</p>
+    </footer>
+
+    <!-- <script src="../js/gallery.js"></script> -->
+    <script>
+        let imgs = document.querySelectorAll(".image img");
+        let slidesIndex = 0;
+        //console.log(imgs);
+
+        let btnNext = document.querySelector(".right-arrow");
+        let btnPrev = document.querySelector(".left-arrow");
+        //let centerImage0 = document.getElementById("focused-image");
+        let centerImage = document.querySelector("#focused-image img");
+        let imageHeader = document.getElementById("image-header");
+        //console.log(centerImage);
+        
+        // let imageHeader = document.getElementsByTagName('h2');
+        // console.log(imageHeader);
+        
+        btnNext.addEventListener("click", showNextImage );
+        btnPrev.addEventListener("click", showPrevImage );
+        
+        function loadImage(){
+            if(slidesIndex === -1  || slidesIndex===undefined){
+                slidesIndex = imgs.length-1;
+            }
+            if(slidesIndex===imgs.length){
+                slidesIndex = 0;
+            }
+        
+            imageHeader.innerHTML = imgs[slidesIndex].alt;
+            centerImage.src = imgs[slidesIndex].src;
+        }
+
+        function showNextImage() {
+            slidesIndex++;
+            //console.log(slidesIndex);
+            //console.log(centerImage);
+            loadImage();
+        }
+        
+        function showPrevImage() {
+            slidesIndex--;
+            //console.log(slidesIndex);
+            //console.log(centerImage);
+            loadImage();
+        }
+
+        for (let i = 0; i < imgs.length; i++) {
+            imgs[i].addEventListener("click", function() {
+                // console.log("you clicked picture number " + i);
+                slidesIndex = i;
+                imageHeader.innerHTML = imgs[slidesIndex].alt;
+                centerImage.src=imgs[slidesIndex].src;
+            });
+        }
+        
+        //setInterval(showNextImage, 3000);
+    </script>
+</body>
+</html>

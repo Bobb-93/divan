@@ -1,0 +1,146 @@
+body{
+    position: relative;
+}
+
+main{
+    position: relative;
+    /* float: none; */
+    /* left: 0;
+    right: 0; */
+    margin: 0 auto;
+    width: 95vw;
+}
+
+header{
+    width: 100%;
+    height: 11%;
+}
+
+nav{
+    position: relative;
+    width: 100%;
+    height: 2.6em;
+    background-color: #CB171E;
+}
+
+li{
+    display: inline-block;
+}
+
+h1{
+    position: absolute;
+    top: 2.4em;
+    left: 21em;
+    font-family: sans-serif;
+}
+
+hr{
+    width: 85vw;
+    margin-left: 7em;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.pages-box{
+    margin-left: 3.25em;
+    padding-left: 0.5em;
+}
+
+nav>ul{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+nav>ul>li{
+    float: left;
+    width: 16.6%;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.fa-facebook-square:hover{
+    color: #3B579D;
+}
+
+.fa-linkedin:hover{
+    color: #0A66C2;
+}
+
+#logo{
+    position: absolute;
+    top: 3.25em;
+    left: 7.5em;
+    height: 54px;
+    width: 60px;
+    z-index: 1;
+}
+
+#services li{
+    text-align: left;
+}
+
+
+#logo:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#services:hover ul{
+    display: inline-block;
+}
+
+/* #consulting:hover::before, #furnishing:hover::before, #procurement:hover::before, #interior-detailing:hover::before{
+    content: "";
+    font-size: 0px; 
+    line-height: 0%; 
+    width: 0px;
+    border-top: 5px solid #CB171E;
+    border-left: 10px solid #000;
+    border-bottom: 5px solid #CB171E;
+} */
+
+/*
+#home{
+    position: fixed;
+    right: 55em;
+    top: 1em;
+}
+
+#news{
+    position: fixed;
+    right: 45em;
+    top: 1em;
+}
+
+#about-us{
+    position: fixed;
+    right: 35em;
+    top: 1em;
+}
+
+#services{
+    position: fixed;
+    right: 25em;
+    top: 1em;
+}
+
+#gallery{
+    position: fixed;
+    right: 14em;
+    top: 1em;
+}
+
+#contact{
+    position: fixed;
+    right: 2em;
+    top: 1em; 
+}
+*/
+
