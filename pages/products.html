@@ -91,6 +91,21 @@
     
     <main>
         <h2>Choose from our Variety of Products!</h2>
+        <div id="leftDiv">
+            <h3 class="productName"></h3>
+            <p class="price"></p>
+            <p class="description"></p>
+        </div>
+        <div id="centerDiv">
+            <h3 class="productName"></h3>
+            <p class="price"></p>
+            <p class="description"></p>
+        </div>
+        <div id="rightDiv">
+            <h3 class="productName"></h3>
+            <p class="price"></p>
+            <p class="description"></p>
+        </div>
     </main>
     
     <footer>
@@ -128,7 +143,18 @@
             storageCabinets: document.getElementById("storageCabinets"),
             bookcases: document.getElementById("bookcases")
         };
-        
+        const threeDivs = {
+            leftProductName: document.querySelector("#leftDiv productName"),
+            leftProductPrice: document.querySelector("#leftDiv price"),
+            leftProductDescription: document.querySelector("#leftDiv description"),
+            centerProductName: document.querySelector("#centerDiv productName"),
+            centerProductPrice: document.querySelector("#centerDiv price"),
+            centerProductDescription: document.querySelector("#centerDiv description"),
+            rightProductName: document.querySelector("#rightDiv productName"),
+            rightProductPrice: document.querySelector("#rightDiv price"),
+            rightProductDescription: document.querySelector("#rightDiv description")
+
+        };
     </script>
 </body>
 </html>
