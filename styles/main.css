@@ -85,7 +85,7 @@ i:hover{
     width: 75px;
 }
 
-#consulting:hover, #furnishing:hover, #procurement:hover, #interior-detailing:hover{
+#services>ul>li:hover{
     background-color: #D5454B;
     color: #512727;
 }

@@ -6,7 +6,7 @@
     position: fixed;
     top: 9em;
     left: 1.9em;
-    width: 12em;  
+    width: 11em;  
     height: 22em;
 }
 
@@ -41,11 +41,11 @@
 
 #livingRoom ul, #diningRoom ul, #bedroom ul, #office ul{
     position: absolute;
-    left: 9em;
+    left: 8.5em;
     top: 0;
 }
 
-#sofas:hover, #sectionals:hover, #sleeperSofas:hover, #accentChairs:hover, #loveseats:hover, #chaises:hover, #chairsAndAHalf:hover, #recliners:hover, #swivelsAndGliders:hover, #chairOttomans:hover, #diningTables:hover, #armChairs:hover, #sideChairs:hover, #barAndCounterStools:hover, #sideboards:hover, #consoleTables:hover, #beds:hover, #headboards:hover, #nightstands:hover, #dressers:hover, #chestsAndArmoires:hover, #mirrors:hover, #mattresses:hover, #benches:hover, #desks:hover, #storageCabinets:hover, #bookcases:hover{
+#productsLists>ul>li>ul>li:hover{
     background-color: #D5454B;
     color: #512727;
 }
