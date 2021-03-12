@@ -1,0 +1,51 @@
+#productsLists>ul>li{
+    width: 15em;
+}
+
+#productsLists{
+    position: fixed;
+    top: 9em;
+    left: 1.9em;
+    width: 12em;  
+    height: 22em;
+}
+
+#productsLists li{
+    text-align: left;
+    padding-left: 1em;
+}
+
+#livingRoom{
+    padding-top: 2em;
+    position: relative;
+}
+
+#diningRoom{
+    padding-top: .5em;
+    position: relative;
+}
+
+#bedroom{
+    padding-top: .5em;
+    position: relative;
+}
+
+#office{
+    padding-top: .5em;
+    position: relative;
+}
+
+#livingRoom:hover ul, #diningRoom:hover ul, #bedroom:hover ul, #office:hover ul{
+    display: block;
+}
+
+#livingRoom ul, #diningRoom ul, #bedroom ul, #office ul{
+    position: absolute;
+    left: 9em;
+    top: 0;
+}
+
+#sofas:hover, #sectionals:hover, #sleeperSofas:hover, #accentChairs:hover, #loveseats:hover, #chaises:hover, #chairsAndAHalf:hover, #recliners:hover, #swivelsAndGliders:hover, #chairOttomans:hover, #diningTables:hover, #armChairs:hover, #sideChairs:hover, #barAndCounterStools:hover, #sideboards:hover, #consoleTables:hover, #beds:hover, #headboards:hover, #nightstands:hover, #dressers:hover, #chestsAndArmoires:hover, #mirrors:hover, #mattresses:hover, #benches:hover, #desks:hover, #storageCabinets:hover, #bookcases:hover{
+    background-color: #D5454B;
+    color: #512727;
+}
