@@ -1,3 +1,15 @@
+main{
+    position: absolute;
+    left: 13em;
+    top: 3em;
+}
+
+main h2{
+    margin-top: 10%;
+    margin-left: 25%;
+
+}
+
 #productsLists>ul>li{
     width: 15em;
 }
