@@ -42,7 +42,19 @@
 #livingRoom ul, #diningRoom ul, #bedroom ul, #office ul{
     position: absolute;
     left: 8.5em;
-    top: 0;
+    top: 0em;
+}
+
+#diningRoom ul{
+    top: 0.5em;
+}
+
+#bedroom ul{
+    top: 0.5em;
+}
+
+#office ul{
+    top: 0.5em;
 }
 
 #productsLists>ul>li>ul>li:hover{
