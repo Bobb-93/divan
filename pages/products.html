@@ -90,21 +90,27 @@
     </nav>
     
     <main>
-        <h2>Choose from our Variety of Products!</h2>
+        <h2 id="chooseHeader">Choose from our Variety of Products!</h2>
         <div id="leftDiv">
-            <h3 class="productName"></h3>
-            <p class="price"></p>
-            <p class="description"></p>
+            <h3 class="productName">Product Name 1</h3>
+            <img src="../images/products/sofa-1.jpg" alt="sofa-1">
+            <p class="price">Price: $<span>100</span></p>
+            <button class="addToChart">Add to chart</button>
+            <p class="description">Product Description 1</p>
         </div>
         <div id="centerDiv">
-            <h3 class="productName"></h3>
-            <p class="price"></p>
-            <p class="description"></p>
+            <h3 class="productName">Product Name 2</h3>
+            <img src="../images/products/sofa-2.jpg" alt="sofa-2">
+            <p class="price">Price: $<span>200</span></p>
+            <button class="addToChart">Add to chart</button>
+            <p class="description">Product Description 2</p>
         </div>
         <div id="rightDiv">
-            <h3 class="productName"></h3>
-            <p class="price"></p>
-            <p class="description"></p>
+            <h3 class="productName">Product Name 3</h3>
+            <img src="../images/products/sofa-3.jpg" alt="sofa-3">
+            <p class="price">Price: $<span>50</span></p>
+            <button class="addToChart">Add to chart</button>
+            <p class="description">Product Description 3</p>
         </div>
     </main>
     
@@ -155,6 +161,42 @@
             rightProductDescription: document.querySelector("#rightDiv description")
 
         };
+
+        const sofas = [
+            {
+                name: "sofa 1",
+                price: 299.99,
+                description: "average sofa"
+            },
+            {
+                name: "sofa 2",
+                price: 399.99,
+                description: "expensive sofa"
+            },
+            {
+                name: "sofa 3",
+                price: 189.99,
+                description: "cheap sofa"
+            }
+        ];
+        
+        const sofas = [
+            {
+                name: "sofa 1",
+                price: 299.99,
+                description: "average sofa"
+            },
+            {
+                name: "sofa 2",
+                price: 399.99,
+                description: "expensive sofa"
+            },
+            {
+                name: "sofa 3",
+                price: 189.99,
+                description: "cheap sofa"
+            }
+        ];
     </script>
 </body>
 </html>

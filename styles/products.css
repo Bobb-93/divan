@@ -4,14 +4,49 @@ main{
     top: 3em;
 }
 
-main h2{
-    margin-top: 10%;
-    margin-left: 25%;
-
+main>div{
+    display: inline-block;
+    height: 15em;
+    width: 20em;
+    border: 1px solid black;
+    margin-right: 1em;
 }
 
-#productsLists>ul>li{
-    width: 15em;
+main h2{
+    /* margin-top: 10%; */
+    margin-left: 25%;
+    margin-bottom: 5%;
+}
+
+main div img{
+    height: 160px;
+    width: 160px;
+    padding-left: 10px;
+    float: left;
+}
+
+.productName{
+    text-align: center;
+}
+
+.price{
+    padding-top: 6.9em;
+}
+
+.addToChart{
+    margin-top: 1em;
+}
+
+.price{
+    margin-left: 11em;
+}
+
+.addToChart{
+    margin-left: .5em;
+}
+
+.description{
+    margin-left: .7em;
 }
 
 #productsLists{
@@ -20,6 +55,7 @@ main h2{
     left: 1.9em;
     width: 11em;  
     height: 22em;
+    z-index: 1000;
 }
 
 #productsLists li{
@@ -47,10 +83,6 @@ main h2{
     position: relative;
 }
 
-#livingRoom:hover ul, #diningRoom:hover ul, #bedroom:hover ul, #office:hover ul{
-    display: block;
-}
-
 #livingRoom ul, #diningRoom ul, #bedroom ul, #office ul{
     position: absolute;
     left: 8.5em;
@@ -67,6 +99,14 @@ main h2{
 
 #office ul{
     top: 0.5em;
+}
+
+#productsLists>ul>li{
+    width: 15em;
+}
+
+#livingRoom:hover ul, #diningRoom:hover ul, #bedroom:hover ul, #office:hover ul{
+    display: block;
 }
 
 #productsLists>ul>li>ul>li:hover{
