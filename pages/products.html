@@ -92,25 +92,25 @@
     <main>
         <h2 id="chooseHeader">Choose from our Variety of Products!</h2>
         <div id="leftDiv">
-            <h3 class="productName">Product Name 1</h3>
-            <img src="../images/products/sofa-1.jpg" alt="sofa-1">
-            <p class="price">Price: $<span>100</span></p>
+            <h3 class="productName"></h3>
+            <img src="#" alt="sofa-1" id="img-1">
+            <p class="price">Price: $<span></span></p>
             <button class="addToChart">Add to chart</button>
-            <p class="description">Product Description 1</p>
+            <p class="description"></p>
         </div>
         <div id="centerDiv">
-            <h3 class="productName">Product Name 2</h3>
-            <img src="../images/products/sofa-2.jpg" alt="sofa-2">
-            <p class="price">Price: $<span>200</span></p>
+            <h3 class="productName"></h3>
+            <img src="#" alt="sofa-2" id="img-2">
+            <p class="price">Price: $<span></span></p>
             <button class="addToChart">Add to chart</button>
-            <p class="description">Product Description 2</p>
+            <p class="description"></p>
         </div>
         <div id="rightDiv">
-            <h3 class="productName">Product Name 3</h3>
-            <img src="../images/products/sofa-3.jpg" alt="sofa-3">
-            <p class="price">Price: $<span>50</span></p>
+            <h3 class="productName"></h3>
+            <img src="#" alt="sofa-3" id="img-3">
+            <p class="price">Price: $<span></span></p>
             <button class="addToChart">Add to chart</button>
-            <p class="description">Product Description 3</p>
+            <p class="description"></p>
         </div>
     </main>
     
@@ -147,56 +147,78 @@
             benches: document.getElementById("benches"),
             desks: document.getElementById("desks"),
             storageCabinets: document.getElementById("storageCabinets"),
-            bookcases: document.getElementById("bookcases")
+            bookcases: document.getElementById("bookcases"),
+            leftDiv: document.getElementById("leftDiv"),
+            centerDiv: document.getElementById("centerDiv"),
+            rightDiv: document.getElementById("rightDiv"),
+
         };
+
         const threeDivs = {
-            leftProductName: document.querySelector("#leftDiv productName"),
-            leftProductPrice: document.querySelector("#leftDiv price"),
-            leftProductDescription: document.querySelector("#leftDiv description"),
-            centerProductName: document.querySelector("#centerDiv productName"),
-            centerProductPrice: document.querySelector("#centerDiv price"),
-            centerProductDescription: document.querySelector("#centerDiv description"),
-            rightProductName: document.querySelector("#rightDiv productName"),
-            rightProductPrice: document.querySelector("#rightDiv price"),
-            rightProductDescription: document.querySelector("#rightDiv description")
+            leftProductName: document.querySelector("#leftDiv .productName"),
+            leftProductPrice: document.querySelector("#leftDiv .price span"),
+            leftProductDescription: document.querySelector("#leftDiv .description"),
+            leftProductImg: document.getElementById("img-1"),
+
+            centerProductName: document.querySelector("#centerDiv .productName"),
+            centerProductPrice: document.querySelector("#centerDiv .price span"),
+            centerProductDescription: document.querySelector("#centerDiv .description"),
+            centerProductImg: document.getElementById("img-2"),
+
+            rightProductName: document.querySelector("#rightDiv .productName"),
+            rightProductPrice: document.querySelector("#rightDiv .price span"),
+            rightProductDescription: document.querySelector("#rightDiv .description"),
+            rightProductImg: document.getElementById("img-3")
 
         };
 
-        const sofas = [
+        const sofasList = [
             {
                 name: "sofa 1",
                 price: 299.99,
-                description: "average sofa"
+                description: "average sofa",
+                imageSrc: "../images/products/sofa-1.jpg"
             },
             {
                 name: "sofa 2",
                 price: 399.99,
-                description: "expensive sofa"
+                description: "expensive sofa",
+                imageSrc: "../images/products/sofa-2.jpg"
             },
             {
                 name: "sofa 3",
                 price: 189.99,
-                description: "cheap sofa"
+                description: "cheap sofa",
+                imageSrc: "../images/products/sofa-3.jpg"
             }
         ];
+
+        const loadSofas = function(){
+            // console.log("loadsofas??");
+
+            threeDivs.leftProductName.innerText = sofasList[0].name;
+            threeDivs.leftProductPrice.innerText = sofasList[0].price;
+            threeDivs.leftProductDescription.innerText = sofasList[0].description;
+            threeDivs.leftProductImg.src = sofasList[0].imageSrc;
+
+            threeDivs.centerProductName.innerText = sofasList[1].name;
+            threeDivs.centerProductPrice.innerText = sofasList[1].price;
+            threeDivs.centerProductDescription.innerText = sofasList[1].description;
+            threeDivs.centerProductImg.src = sofasList[1].imageSrc;
+
+            threeDivs.rightProductName.innerText = sofasList[2].name;
+            threeDivs.rightProductPrice.innerText = sofasList[2].price;
+            threeDivs.rightProductDescription.innerText = sofasList[2].description;
+            threeDivs.rightProductImg.src = sofasList[2].imageSrc;
+
+            leftDiv.style.display = "inline-block";
+            centerDiv.style.display = "inline-block";
+            rightDiv.style.display = "inline-block";
+
+        };
+
+        sofas.addEventListener("click", loadSofas);
         
-        const sofas = [
-            {
-                name: "sofa 1",
-                price: 299.99,
-                description: "average sofa"
-            },
-            {
-                name: "sofa 2",
-                price: 399.99,
-                description: "expensive sofa"
-            },
-            {
-                name: "sofa 3",
-                price: 189.99,
-                description: "cheap sofa"
-            }
-        ];
     </script>
 </body>
 </html>

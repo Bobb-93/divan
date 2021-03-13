@@ -5,7 +5,7 @@ main{
 }
 
 main>div{
-    display: inline-block;
+    display: none;
     height: 15em;
     width: 20em;
     border: 1px solid black;
