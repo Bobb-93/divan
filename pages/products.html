@@ -151,118 +151,163 @@
             leftDiv: document.getElementById("leftDiv"),
             centerDiv: document.getElementById("centerDiv"),
             rightDiv: document.getElementById("rightDiv"),
-
+            
         };
-
+        
         const threeDivs = {
             leftProductName: document.querySelector("#leftDiv .productName"),
             leftProductPrice: document.querySelector("#leftDiv .price span"),
             leftProductDescription: document.querySelector("#leftDiv .description"),
             leftProductImg: document.getElementById("img-1"),
-
+            
             centerProductName: document.querySelector("#centerDiv .productName"),
             centerProductPrice: document.querySelector("#centerDiv .price span"),
             centerProductDescription: document.querySelector("#centerDiv .description"),
             centerProductImg: document.getElementById("img-2"),
-
+            
             rightProductName: document.querySelector("#rightDiv .productName"),
             rightProductPrice: document.querySelector("#rightDiv .price span"),
             rightProductDescription: document.querySelector("#rightDiv .description"),
             rightProductImg: document.getElementById("img-3")
-
+            
         };
-
+        
         const sofasList = [
-            {
-                name: "sofa 1",
-                price: 299.99,
-                description: "average sofa",
-                imageSrc: "../images/products/sofa-1.jpg"
-            },
-            {
-                name: "sofa 2",
-                price: 399.99,
-                description: "expensive sofa",
-                imageSrc: "../images/products/sofa-2.jpg"
-            },
-            {
-                name: "sofa 3",
-                price: 189.99,
-                description: "cheap sofa",
-                imageSrc: "../images/products/sofa-3.jpg"
-            }
+        {
+            name: "sofa 1",
+            price: 299.99,
+            description: "average sofa",
+            imageSrc: "../images/products/sofa-1.jpg"
+        },
+        {
+            name: "sofa 2",
+            price: 399.99,
+            description: "expensive sofa",
+            imageSrc: "../images/products/sofa-2.jpg"
+        },
+        {
+            name: "sofa 3",
+            price: 189.99,
+            description: "cheap sofa",
+            imageSrc: "../images/products/sofa-3.jpg"
+        }
         ];
-
+        
         const loadSofas = function(){
             
             threeDivs.leftProductName.innerText = sofasList[0].name;
             threeDivs.leftProductPrice.innerText = sofasList[0].price;
             threeDivs.leftProductDescription.innerText = sofasList[0].description;
             threeDivs.leftProductImg.src = sofasList[0].imageSrc;
-
+            
             threeDivs.centerProductName.innerText = sofasList[1].name;
             threeDivs.centerProductPrice.innerText = sofasList[1].price;
             threeDivs.centerProductDescription.innerText = sofasList[1].description;
             threeDivs.centerProductImg.src = sofasList[1].imageSrc;
-
+            
             threeDivs.rightProductName.innerText = sofasList[2].name;
             threeDivs.rightProductPrice.innerText = sofasList[2].price;
             threeDivs.rightProductDescription.innerText = sofasList[2].description;
             threeDivs.rightProductImg.src = sofasList[2].imageSrc;
-
+            
             leftDiv.style.display = "inline-block";
             centerDiv.style.display = "inline-block";
             rightDiv.style.display = "inline-block";
-
+            
         };
-
+        
         const sectionalSofasList = [
-            {
-                name: "sectional sofa 1",
-                price: 319.99,
-                description: "average sectional sofa",
-                imageSrc: "../images/products/sectional-sofa-1.jpg"
-            },
-            {
-                name: "sectional sofa 2",
-                price: 259.99,
-                description: "expensive sectional sofa",
-                imageSrc: "../images/products/sectional-sofa-2.jpg"
-            },
-            {
-                name: "sectional sofa 3",
-                price: 379.99,
-                description: "cheap sectional sofa",
-                imageSrc: "../images/products/sectional-sofa-3.jpg"
-            }
+        {
+            name: "sectional sofa 1",
+            price: 319.99,
+            description: "average sectional sofa",
+            imageSrc: "../images/products/sectional-sofa-1.jpg"
+        },
+        {
+            name: "sectional sofa 2",
+            price: 259.99,
+            description: "cheap sectional sofa",
+            imageSrc: "../images/products/sectional-sofa-2.jpg"
+        },
+        {
+            name: "sectional sofa 3",
+            price: 379.99,
+            description: "expensive sectional sofa",
+            imageSrc: "../images/products/sectional-sofa-3.jpg"
+        }
         ];
-
+        
         const loadSectionalSofas = function(){
-
+            
             threeDivs.leftProductName.innerText = sectionalSofasList[0].name;
             threeDivs.leftProductPrice.innerText = sectionalSofasList[0].price;
             threeDivs.leftProductDescription.innerText = sectionalSofasList[0].description;
             threeDivs.leftProductImg.src = sectionalSofasList[0].imageSrc;
-
+            
             threeDivs.centerProductName.innerText = sectionalSofasList[1].name;
             threeDivs.centerProductPrice.innerText = sectionalSofasList[1].price;
             threeDivs.centerProductDescription.innerText = sectionalSofasList[1].description;
             threeDivs.centerProductImg.src = sectionalSofasList[1].imageSrc;
-
+            
             threeDivs.rightProductName.innerText = sectionalSofasList[2].name;
             threeDivs.rightProductPrice.innerText = sectionalSofasList[2].price;
             threeDivs.rightProductDescription.innerText = sectionalSofasList[2].description;
             threeDivs.rightProductImg.src = sectionalSofasList[2].imageSrc;
-
+            
             leftDiv.style.display = "inline-block";
             centerDiv.style.display = "inline-block";
             rightDiv.style.display = "inline-block";
-
+            
         };
-
+        
+        const diningTablesList = [
+        {
+            name: "dining table 1",
+            price: 219.99,
+            description: "average dining table",
+            imageSrc: "../images/products/dining-table-1.jpg"
+        },
+        {
+            name: "dining table 2",
+            price: 299.99,
+            description: "expensive dining table",
+            imageSrc: "../images/products/dining-table-2.jpg"
+        },
+        {
+            name: "dining table 3",
+            price: 169.99,
+            description: "cheap dining table",
+            imageSrc: "../images/products/dining-table-3.jpg"
+        }
+        ];
+        
+        const loadDiningTables = function(){
+            
+            threeDivs.leftProductName.innerText = diningTablesList[0].name;
+            threeDivs.leftProductPrice.innerText = diningTablesList[0].price;
+            threeDivs.leftProductDescription.innerText = diningTablesList[0].description;
+            threeDivs.leftProductImg.src = diningTablesList[0].imageSrc;
+            
+            threeDivs.centerProductName.innerText = diningTablesList[1].name;
+            threeDivs.centerProductPrice.innerText = diningTablesList[1].price;
+            threeDivs.centerProductDescription.innerText = diningTablesList[1].description;
+            threeDivs.centerProductImg.src = diningTablesList[1].imageSrc;
+            
+            threeDivs.rightProductName.innerText = diningTablesList[2].name;
+            threeDivs.rightProductPrice.innerText = diningTablesList[2].price;
+            threeDivs.rightProductDescription.innerText = diningTablesList[2].description;
+            threeDivs.rightProductImg.src = diningTablesList[2].imageSrc;
+            
+            leftDiv.style.display = "inline-block";
+            centerDiv.style.display = "inline-block";
+            rightDiv.style.display = "inline-block";
+            
+        };
+        
         sofas.addEventListener("click", loadSofas);
         sectionalSofas.addEventListener("click", loadSectionalSofas);
-
+        diningTables.addEventListener("click", loadDiningTables);
+        
         
     </script>
 </body>
