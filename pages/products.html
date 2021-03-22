@@ -392,12 +392,105 @@
             
         };
 
+        const desksList = [
+        {
+            name: "desk 1",
+            price: 219.99,
+            description: "average desk",
+            imageSrc: "../images/products/desk-1.jpg"
+        },
+        {
+            name: "desk 2",
+            price: 299.99,
+            description: "expensive desk",
+            imageSrc: "../images/products/desk-2.jpg"
+        },
+        {
+            name: "desk 3",
+            price: 169.99,
+            description: "cheap desk",
+            imageSrc: "../images/products/desk-3.jpg"
+        }
+        ];
+
+        const loadDesks = function(){
+            
+            threeDivs.leftProductName.innerText = desksList[0].name;
+            threeDivs.leftProductPrice.innerText = desksList[0].price;
+            threeDivs.leftProductDescription.innerText = desksList[0].description;
+            threeDivs.leftProductImg.src = desksList[0].imageSrc;
+            
+            threeDivs.centerProductName.innerText = desksList[1].name;
+            threeDivs.centerProductPrice.innerText = desksList[1].price;
+            threeDivs.centerProductDescription.innerText = desksList[1].description;
+            threeDivs.centerProductImg.src = desksList[1].imageSrc;
+            
+            threeDivs.rightProductName.innerText = desksList[2].name;
+            threeDivs.rightProductPrice.innerText = desksList[2].price;
+            threeDivs.rightProductDescription.innerText = desksList[2].description;
+            threeDivs.rightProductImg.src = desksList[2].imageSrc;
+            
+            leftDiv.style.display = "inline-block";
+            centerDiv.style.display = "inline-block";
+            rightDiv.style.display = "inline-block";
+            
+        };
+
+        const bookcasesList = [
+        {
+            name: "bookcase 1",
+            price: 219.99,
+            description: "average bookcase",
+            imageSrc: "../images/products/bookcase-1.jpg"
+        },
+        {
+            name: "bookcase 2",
+            price: 299.99,
+            description: "expensive bookcase",
+            imageSrc: "../images/products/bookcase-2.jpg"
+        },
+        {
+            name: "bookcase 3",
+            price: 169.99,
+            description: "cheap bookcase",
+            imageSrc: "../images/products/bookcase-3.jpg"
+        }
+        ];
+
+        const loadBookcases = function(){
+            
+            threeDivs.leftProductName.innerText = bookcasesList[0].name;
+            threeDivs.leftProductPrice.innerText = bookcasesList[0].price;
+            threeDivs.leftProductDescription.innerText = bookcasesList[0].description;
+            threeDivs.leftProductImg.src = bookcasesList[0].imageSrc;
+            
+            threeDivs.centerProductName.innerText = bookcasesList[1].name;
+            threeDivs.centerProductPrice.innerText = bookcasesList[1].price;
+            threeDivs.centerProductDescription.innerText = bookcasesList[1].description;
+            threeDivs.centerProductImg.src = bookcasesList[1].imageSrc;
+            
+            threeDivs.rightProductName.innerText = bookcasesList[2].name;
+            threeDivs.rightProductPrice.innerText = bookcasesList[2].price;
+            threeDivs.rightProductDescription.innerText = bookcasesList[2].description;
+            threeDivs.rightProductImg.src = bookcasesList[2].imageSrc;
+            
+            leftDiv.style.display = "inline-block";
+            centerDiv.style.display = "inline-block";
+            rightDiv.style.display = "inline-block";
+            
+        };
+
         sofas.addEventListener("click", loadSofas);
         sectionalSofas.addEventListener("click", loadSectionalSofas);
+
         diningTables.addEventListener("click", loadDiningTables);
+
         beds.addEventListener("click", loadBeds);
-        storageCabinets.addEventListener("click", loadStorageCabinets);
         
+        desks.addEventListener("click", loadDesks);
+        storageCabinets.addEventListener("click", loadStorageCabinets);
+        bookcases.addEventListener("click", loadBookcases);
+      
         
     </script>
 </body>
