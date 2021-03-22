@@ -45,7 +45,7 @@
             <li id="livingRoom"><a href="#">Living Room</a>
                 <ul>
                     <li class="box pages-box" id="sofas"><a href="#">Sofas</a></li>
-                    <li class="box pages-box" id="sectionals"><a href="#">Sectionals</a></li>
+                    <li class="box pages-box" id="sectionalSofas"><a href="#">Sectional Sofas</a></li>
                     <li class="box pages-box" id="sleeperSofas"><a href="#">Sleeper Sofas</a></li>
                     <li class="box pages-box" id="accentChairs"><a href="#">Accent Chairs</a></li>
                     <li class="box pages-box" id="loveseats"><a href="#">Loveseats</a></li>
@@ -72,7 +72,7 @@
                     <li class="box pages-box" id="headboards"><a href="#">Headboards</a></li>
                     <li class="box pages-box" id="nightstands"><a href="#">Nightstands</a></li>
                     <li class="box pages-box" id="dressers"><a href="#">Dressers</a></li>
-                    <li class="box pages-box" id="chestsAndArmoires"><a href="#">Chests and armoires</a></li>
+                    <li class="box pages-box" id="chests"><a href="#">Chests</a></li>
                     <li class="box pages-box" id="mirrors"><a href="#">Mirrors</a></li>
                     <li class="box pages-box" id="mattresses"><a href="#">Mattresses</a></li>
                     <li class="box pages-box" id="benches"><a href="#">Benches</a></li>
@@ -122,7 +122,7 @@
     <script>
         const furnitureTypes = {
             sofas: document.getElementById("sofas"),
-            sectionals: document.getElementById("sectionals"),
+            sectionalSofas: document.getElementById("sectionalSofas"),
             sleeperSofas: document.getElementById("sleeperSofas"),
             accentChairs: document.getElementById("accentChairs"),
             loveseats: document.getElementById("loveseats"),
@@ -141,7 +141,7 @@
             headboards: document.getElementById("headboards"),
             nightstands: document.getElementById("nightstands"),
             dressers: document.getElementById("dressers"),
-            chestsAndArmoires: document.getElementById("chestsAndArmoires"),
+            chests: document.getElementById("chests"),
             mirrors: document.getElementById("mirrors"),
             mattresses: document.getElementById("mattresses"),
             benches: document.getElementById("benches"),
@@ -194,8 +194,7 @@
         ];
 
         const loadSofas = function(){
-            // console.log("loadsofas??");
-
+            
             threeDivs.leftProductName.innerText = sofasList[0].name;
             threeDivs.leftProductPrice.innerText = sofasList[0].price;
             threeDivs.leftProductDescription.innerText = sofasList[0].description;
@@ -217,7 +216,53 @@
 
         };
 
+        const sectionalSofasList = [
+            {
+                name: "sectional sofa 1",
+                price: 319.99,
+                description: "average sectional sofa",
+                imageSrc: "../images/products/sectional-sofa-1.jpg"
+            },
+            {
+                name: "sectional sofa 2",
+                price: 259.99,
+                description: "expensive sectional sofa",
+                imageSrc: "../images/products/sectional-sofa-2.jpg"
+            },
+            {
+                name: "sectional sofa 3",
+                price: 379.99,
+                description: "cheap sectional sofa",
+                imageSrc: "../images/products/sectional-sofa-3.jpg"
+            }
+        ];
+
+        const loadSectionalSofas = function(){
+
+            threeDivs.leftProductName.innerText = sectionalSofasList[0].name;
+            threeDivs.leftProductPrice.innerText = sectionalSofasList[0].price;
+            threeDivs.leftProductDescription.innerText = sectionalSofasList[0].description;
+            threeDivs.leftProductImg.src = sectionalSofasList[0].imageSrc;
+
+            threeDivs.centerProductName.innerText = sectionalSofasList[1].name;
+            threeDivs.centerProductPrice.innerText = sectionalSofasList[1].price;
+            threeDivs.centerProductDescription.innerText = sectionalSofasList[1].description;
+            threeDivs.centerProductImg.src = sectionalSofasList[1].imageSrc;
+
+            threeDivs.rightProductName.innerText = sectionalSofasList[2].name;
+            threeDivs.rightProductPrice.innerText = sectionalSofasList[2].price;
+            threeDivs.rightProductDescription.innerText = sectionalSofasList[2].description;
+            threeDivs.rightProductImg.src = sectionalSofasList[2].imageSrc;
+
+            leftDiv.style.display = "inline-block";
+            centerDiv.style.display = "inline-block";
+            rightDiv.style.display = "inline-block";
+
+        };
+
         sofas.addEventListener("click", loadSofas);
+        sectionalSofas.addEventListener("click", loadSectionalSofas);
+
         
     </script>
 </body>
