@@ -61,7 +61,7 @@
                     <li class="box pages-box" id="diningTables"><a href="#">Dining tables</a></li>
                     <li class="box pages-box" id="armChairs"><a href="#">Arm Chairs</a></li>
                     <li class="box pages-box" id="sideChairs"><a href="#">Side Chairs</a></li>
-                    <li class="box pages-box" id="barAndCounterStools"><a href="#">Bar and counter stools</a></li>
+                    <li class="box pages-box" id="barStools"><a href="#">Bar stools</a></li>
                     <li class="box pages-box" id="sideboards"><a href="#">Sideboards</a></li>
                     <li class="box pages-box" id="consoleTables"><a href="#">Console tables</a></li>
                 </ul>
@@ -134,7 +134,7 @@
             diningTables: document.getElementById("diningTables"),
             armChairs: document.getElementById("armChairs"),
             sideChairs: document.getElementById("sideChairs"),
-            barAndCounterStools: document.getElementById("barAndCounterStools"),
+            barStools: document.getElementById("barStools"),
             sideboards: document.getElementById("sideboards"),
             consoleTables: document.getElementById("consoleTables"),
             beds: document.getElementById("beds"),
@@ -304,9 +304,99 @@
             
         };
         
+        const bedsList = [
+        {
+            name: "bed 1",
+            price: 219.99,
+            description: "average bed",
+            imageSrc: "../images/products/bed-1.jpg"
+        },
+        {
+            name: "bed 2",
+            price: 299.99,
+            description: "expensive bed",
+            imageSrc: "../images/products/bed-2.jpg"
+        },
+        {
+            name: "bed 3",
+            price: 169.99,
+            description: "cheap bed",
+            imageSrc: "../images/products/bed-3.jpg"
+        }
+        ];
+
+        const loadBeds = function(){
+            
+            threeDivs.leftProductName.innerText = bedsList[0].name;
+            threeDivs.leftProductPrice.innerText = bedsList[0].price;
+            threeDivs.leftProductDescription.innerText = bedsList[0].description;
+            threeDivs.leftProductImg.src = bedsList[0].imageSrc;
+            
+            threeDivs.centerProductName.innerText = bedsList[1].name;
+            threeDivs.centerProductPrice.innerText = bedsList[1].price;
+            threeDivs.centerProductDescription.innerText = bedsList[1].description;
+            threeDivs.centerProductImg.src = bedsList[1].imageSrc;
+            
+            threeDivs.rightProductName.innerText = bedsList[2].name;
+            threeDivs.rightProductPrice.innerText = bedsList[2].price;
+            threeDivs.rightProductDescription.innerText = bedsList[2].description;
+            threeDivs.rightProductImg.src = bedsList[2].imageSrc;
+            
+            leftDiv.style.display = "inline-block";
+            centerDiv.style.display = "inline-block";
+            rightDiv.style.display = "inline-block";
+            
+        };
+
+        const storageCabinetsList = [
+        {
+            name: "storage cabinet 1",
+            price: 219.99,
+            description: "average storage cabinet",
+            imageSrc: "../images/products/storage-cabinet-1.jpg"
+        },
+        {
+            name: "storage cabinet 2",
+            price: 299.99,
+            description: "expensive storage cabinet",
+            imageSrc: "../images/products/storage-cabinet-2.jpg"
+        },
+        {
+            name: "storage cabinet 3",
+            price: 169.99,
+            description: "cheap storage cabinet",
+            imageSrc: "../images/products/storage-cabinet-3.jpg"
+        }
+        ];
+
+        const loadStorageCabinets = function(){
+            
+            threeDivs.leftProductName.innerText = storageCabinetsList[0].name;
+            threeDivs.leftProductPrice.innerText = storageCabinetsList[0].price;
+            threeDivs.leftProductDescription.innerText = storageCabinetsList[0].description;
+            threeDivs.leftProductImg.src = storageCabinetsList[0].imageSrc;
+            
+            threeDivs.centerProductName.innerText = storageCabinetsList[1].name;
+            threeDivs.centerProductPrice.innerText = storageCabinetsList[1].price;
+            threeDivs.centerProductDescription.innerText = storageCabinetsList[1].description;
+            threeDivs.centerProductImg.src = storageCabinetsList[1].imageSrc;
+            
+            threeDivs.rightProductName.innerText = storageCabinetsList[2].name;
+            threeDivs.rightProductPrice.innerText = storageCabinetsList[2].price;
+            threeDivs.rightProductDescription.innerText = storageCabinetsList[2].description;
+            threeDivs.rightProductImg.src = storageCabinetsList[2].imageSrc;
+            
+            leftDiv.style.display = "inline-block";
+            centerDiv.style.display = "inline-block";
+            rightDiv.style.display = "inline-block";
+            
+        };
+
         sofas.addEventListener("click", loadSofas);
         sectionalSofas.addEventListener("click", loadSectionalSofas);
         diningTables.addEventListener("click", loadDiningTables);
+        beds.addEventListener("click", loadBeds);
+        storageCabinets.addEventListener("click", loadStorageCabinets);
         
         
     </script>
