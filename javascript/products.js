@@ -1,3 +1,6 @@
+/*
+    Objects
+*/
 const furnitureTypes = {
     sofas: document.getElementById("sofas"),
     sectionalSofas: document.getElementById("sectionalSofas"),
@@ -7,7 +10,6 @@ const furnitureTypes = {
     chaises: document.getElementById("chaises"),
     chairsAndAHalf: document.getElementById("chairsAndAHalf"),
     recliners: document.getElementById("recliners"),
-    swivelsAndGliders: document.getElementById("swivelsAndGliders"),
     chairOttomans: document.getElementById("chairOttomans"),
     diningTables: document.getElementById("diningTables"),
     armChairs: document.getElementById("armChairs"),
@@ -117,7 +119,7 @@ const accentChairsList = [
     {
         name: "accent chair 1",
         price: 319.99,
-        description: "average accent chair ",
+        description: "average accent chair",
         imageSrc: "../images/products/accent-chair-1.jpg"
     },
     {
@@ -131,6 +133,111 @@ const accentChairsList = [
         price: 379.99,
         description: "expensive accent chair",
         imageSrc: "../images/products/accent-chair-3.jpg"
+    }
+];
+
+const loveseatsList = [
+    {
+        name: "loveseat 1",
+        price: 319.99,
+        description: "average loveseat",
+        imageSrc: "../images/products/loveseat-1.jpg"
+    },
+    {
+        name: "loveseat 2",
+        price: 259.99,
+        description: "cheap loveseat",
+        imageSrc: "../images/products/loveseat-2.jpg"
+    },
+    {
+        name: "loveseat 3",
+        price: 379.99,
+        description: "expensive loveseat",
+        imageSrc: "../images/products/loveseat-3.jpg"
+    }
+];
+
+const chaisesList = [
+    {
+        name: "chaise 1",
+        price: 319.99,
+        description: "average chaise",
+        imageSrc: "../images/products/chaise-1.jpg"
+    },
+    {
+        name: "chaise 2",
+        price: 259.99,
+        description: "cheap chaise",
+        imageSrc: "../images/products/chaise-2.jpg"
+    },
+    {
+        name: "chaise 3",
+        price: 379.99,
+        description: "expensive chaise",
+        imageSrc: "../images/products/chaise-3.jpg"
+    }
+];
+
+const chairsAndAHalfList = [
+    {
+        name: "chair and a half 1",
+        price: 319.99,
+        description: "average chair and a half",
+        imageSrc: "../images/products/chair-and-a-half-1.jpg"
+    },
+    {
+        name: "chair and a half 2",
+        price: 259.99,
+        description: "cheap chair and a half",
+        imageSrc: "../images/products/chair-and-a-half-2.jpg"
+    },
+    {
+        name: "chair and a half 3",
+        price: 379.99,
+        description: "expensive chair and a half",
+        imageSrc: "../images/products/chair-and-a-half-3.jpg"
+    }
+];
+
+const reclinersList = [
+    {
+        name: "recliner 1",
+        price: 319.99,
+        description: "average recliner",
+        imageSrc: "../images/products/recliner-1.jpg"
+    },
+    {
+        name: "recliner 2",
+        price: 259.99,
+        description: "cheap recliner",
+        imageSrc: "../images/products/recliner-2.jpg"
+    },
+    {
+        name: "recliner 3",
+        price: 379.99,
+        description: "expensive recliner",
+        imageSrc: "../images/products/recliner-3.jpg"
+    }
+];
+
+const ottomanChairsList = [
+    {
+        name: "Ottoman Chair 1",
+        price: 319.99,
+        description: "Average Ottoman Chair",
+        imageSrc: "../images/products/ottoman-chair-1.jpg"
+    },
+    {
+        name: "Ottoman Chair 2",
+        price: 259.99,
+        description: "Cheap Ottoman Chair",
+        imageSrc: "../images/products/ottoman-chair-2.jpg"
+    },
+    {
+        name: "Ottoman Chair 3",
+        price: 379.99,
+        description: "Expensive Ottoman Chair",
+        imageSrc: "../images/products/ottoman-chair-3.jpg"
     }
 ];
 
