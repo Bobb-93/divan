@@ -1,30 +1,17 @@
 /*
-    Objects
+    DOM Objects
 */
 const furnitureTypes = {
     sofas: document.getElementById("sofas"),
     sectionalSofas: document.getElementById("sectionalSofas"),
     sleeperSofas: document.getElementById("sleeperSofas"),
-    accentChairs: document.getElementById("accentChairs"),
-    loveseats: document.getElementById("loveseats"),
-    chaises: document.getElementById("chaises"),
-    chairsAndAHalf: document.getElementById("chairsAndAHalf"),
-    recliners: document.getElementById("recliners"),
-    chairOttomans: document.getElementById("chairOttomans"),
+    ottomanChairs: document.getElementById("ottomanChairs"),
     diningTables: document.getElementById("diningTables"),
     armChairs: document.getElementById("armChairs"),
-    sideChairs: document.getElementById("sideChairs"),
-    barStools: document.getElementById("barStools"),
-    sideboards: document.getElementById("sideboards"),
     consoleTables: document.getElementById("consoleTables"),
     beds: document.getElementById("beds"),
-    headboards: document.getElementById("headboards"),
     nightstands: document.getElementById("nightstands"),
-    dressers: document.getElementById("dressers"),
-    chests: document.getElementById("chests"),
     mirrors: document.getElementById("mirrors"),
-    mattresses: document.getElementById("mattresses"),
-    benches: document.getElementById("benches"),
     desks: document.getElementById("desks"),
     storageCabinets: document.getElementById("storageCabinets"),
     bookcases: document.getElementById("bookcases"),
@@ -52,171 +39,69 @@ const threeDivs = {
     
 };
 
+/*
+    Furniture Lists from Objects
+*/
 const sofasList = [
     {
-        name: "sofa 1",
+        name: "Sofa 1",
         price: 299.99,
-        description: "average sofa",
+        description: "Average Sofa",
         imageSrc: "../images/products/sofa-1.jpg"
     },
     {
-        name: "sofa 2",
+        name: "Sofa 2",
         price: 399.99,
-        description: "expensive sofa",
+        description: "Expensive Sofa",
         imageSrc: "../images/products/sofa-2.jpg"
     },
     {
-        name: "sofa 3",
+        name: "Sofa 3",
         price: 189.99,
-        description: "cheap sofa",
+        description: "Cheap Sofa",
         imageSrc: "../images/products/sofa-3.jpg"
     }
 ];
 
 const sectionalSofasList = [
     {
-        name: "sectional sofa 1",
+        name: "Sectional Sofa 1",
         price: 319.99,
-        description: "average sectional sofa",
+        description: "Average Sectional Sofa",
         imageSrc: "../images/products/sectional-sofa-1.jpg"
     },
     {
-        name: "sectional sofa 2",
+        name: "Sectional Sofa 2",
         price: 259.99,
-        description: "cheap sectional sofa",
+        description: "Cheap Sectional Sofa",
         imageSrc: "../images/products/sectional-sofa-2.jpg"
     },
     {
-        name: "sectional sofa 3",
+        name: "Sectional Sofa 3",
         price: 379.99,
-        description: "expensive sectional sofa",
+        description: "Expensive Sectional Sofa",
         imageSrc: "../images/products/sectional-sofa-3.jpg"
     }
 ];
 
 const sleeperSofasList = [
     {
-        name: "sleeper sofa 1",
+        name: "Sleeper Sofa 1",
         price: 319.99,
-        description: "average sleeper sofa",
+        description: "Average Sleeper Sofa",
         imageSrc: "../images/products/sleeper-sofa-1.jpg"
     },
     {
-        name: "sleeper sofa 2",
+        name: "Sleeper Sofa 2",
         price: 259.99,
-        description: "cheap sleeper sofa",
+        description: "Cheap Sleeper Sofa",
         imageSrc: "../images/products/sleeper-sofa-2.jpg"
     },
     {
-        name: "sleeper sofa 3",
+        name: "Sleeper Sofa 3",
         price: 379.99,
-        description: "expensive sleeper sofa",
+        description: "Expensive Sleeper Sofa",
         imageSrc: "../images/products/sleeper-sofa-3.jpg"
-    }
-];
-
-const accentChairsList = [
-    {
-        name: "accent chair 1",
-        price: 319.99,
-        description: "average accent chair",
-        imageSrc: "../images/products/accent-chair-1.jpg"
-    },
-    {
-        name: "accent chair 2",
-        price: 259.99,
-        description: "cheap accent chair",
-        imageSrc: "../images/products/accent-chair-2.jpg"
-    },
-    {
-        name: "accent chair 3",
-        price: 379.99,
-        description: "expensive accent chair",
-        imageSrc: "../images/products/accent-chair-3.jpg"
-    }
-];
-
-const loveseatsList = [
-    {
-        name: "loveseat 1",
-        price: 319.99,
-        description: "average loveseat",
-        imageSrc: "../images/products/loveseat-1.jpg"
-    },
-    {
-        name: "loveseat 2",
-        price: 259.99,
-        description: "cheap loveseat",
-        imageSrc: "../images/products/loveseat-2.jpg"
-    },
-    {
-        name: "loveseat 3",
-        price: 379.99,
-        description: "expensive loveseat",
-        imageSrc: "../images/products/loveseat-3.jpg"
-    }
-];
-
-const chaisesList = [
-    {
-        name: "chaise 1",
-        price: 319.99,
-        description: "average chaise",
-        imageSrc: "../images/products/chaise-1.jpg"
-    },
-    {
-        name: "chaise 2",
-        price: 259.99,
-        description: "cheap chaise",
-        imageSrc: "../images/products/chaise-2.jpg"
-    },
-    {
-        name: "chaise 3",
-        price: 379.99,
-        description: "expensive chaise",
-        imageSrc: "../images/products/chaise-3.jpg"
-    }
-];
-
-const chairsAndAHalfList = [
-    {
-        name: "chair and a half 1",
-        price: 319.99,
-        description: "average chair and a half",
-        imageSrc: "../images/products/chair-and-a-half-1.jpg"
-    },
-    {
-        name: "chair and a half 2",
-        price: 259.99,
-        description: "cheap chair and a half",
-        imageSrc: "../images/products/chair-and-a-half-2.jpg"
-    },
-    {
-        name: "chair and a half 3",
-        price: 379.99,
-        description: "expensive chair and a half",
-        imageSrc: "../images/products/chair-and-a-half-3.jpg"
-    }
-];
-
-const reclinersList = [
-    {
-        name: "recliner 1",
-        price: 319.99,
-        description: "average recliner",
-        imageSrc: "../images/products/recliner-1.jpg"
-    },
-    {
-        name: "recliner 2",
-        price: 259.99,
-        description: "cheap recliner",
-        imageSrc: "../images/products/recliner-2.jpg"
-    },
-    {
-        name: "recliner 3",
-        price: 379.99,
-        description: "expensive recliner",
-        imageSrc: "../images/products/recliner-3.jpg"
     }
 ];
 
@@ -243,118 +128,207 @@ const ottomanChairsList = [
 
 const diningTablesList = [
     {
-        name: "dining table 1",
+        name: "Dining Table 1",
         price: 219.99,
-        description: "average dining table",
+        description: "Average Dining Table",
         imageSrc: "../images/products/dining-table-1.jpg"
     },
     {
-        name: "dining table 2",
+        name: "Dining Table 2",
         price: 299.99,
-        description: "expensive dining table",
+        description: "Expensive Dining Table",
         imageSrc: "../images/products/dining-table-2.jpg"
     },
     {
-        name: "dining table 3",
+        name: "Dining Table 3",
         price: 169.99,
-        description: "cheap dining table",
+        description: "Cheap Dining Table",
         imageSrc: "../images/products/dining-table-3.jpg"
+    }
+];
+
+const armChairsList = [
+    {
+        name: "Armchair 1",
+        price: 219.99,
+        description: "Average Armchair",
+        imageSrc: "../images/products/Armchair-1.jpg"
+    },
+    {
+        name: "Armchair 2",
+        price: 299.99,
+        description: "Expensive Armchair",
+        imageSrc: "../images/products/Armchair-2.jpg"
+    },
+    {
+        name: "Armchair 3",
+        price: 169.99,
+        description: "Cheap Armchair",
+        imageSrc: "../images/products/Armchair-3.jpg"
+    }
+];
+
+const consoleTablesList = [
+    {
+        name: "Console Table 1",
+        price: 219.99,
+        description: "Average Console Table",
+        imageSrc: "../images/products/console-table-1.jpg"
+    },
+    {
+        name: "Console Table 2",
+        price: 299.99,
+        description: "Expensive Console Table",
+        imageSrc: "../images/products/console-table-2.jpg"
+    },
+    {
+        name: "Console Table 3",
+        price: 169.99,
+        description: "Cheap Console Table",
+        imageSrc: "../images/products/console-table-3.jpg"
     }
 ];
 
 const bedsList = [
     {
-        name: "bed 1",
+        name: "Bed 1",
         price: 219.99,
-        description: "average bed",
+        description: "Average Bed",
         imageSrc: "../images/products/bed-1.jpg"
     },
     {
-        name: "bed 2",
+        name: "Bed 2",
         price: 299.99,
-        description: "expensive bed",
+        description: "Expensive Bed",
         imageSrc: "../images/products/bed-2.jpg"
     },
     {
-        name: "bed 3",
+        name: "Bed 3",
         price: 169.99,
-        description: "cheap bed",
+        description: "Cheap Bed",
         imageSrc: "../images/products/bed-3.jpg"
     }
 ];
 
-const storageCabinetsList = [
+const nightstandsList = [
     {
-        name: "storage cabinet 1",
+        name: "Night Stand 1",
         price: 219.99,
-        description: "average storage cabinet",
-        imageSrc: "../images/products/storage-cabinet-1.jpg"
+        description: "Average Night Stand",
+        imageSrc: "../images/products/nightstand-1.jpg"
     },
     {
-        name: "storage cabinet 2",
+        name: "Night Stand 2",
         price: 299.99,
-        description: "expensive storage cabinet",
-        imageSrc: "../images/products/storage-cabinet-2.jpg"
+        description: "Expensive Night Stand",
+        imageSrc: "../images/products/nightstand-2.jpg"
     },
     {
-        name: "storage cabinet 3",
+        name: "Night Stand 3",
         price: 169.99,
-        description: "cheap storage cabinet",
-        imageSrc: "../images/products/storage-cabinet-3.jpg"
+        description: "Cheap Night Stand",
+        imageSrc: "../images/products/nightstand-3.jpg"
+    }
+];
+
+const mirrorsList = [
+    {
+        name: "Mirror 1",
+        price: 219.99,
+        description: "Average Mirror",
+        imageSrc: "../images/products/mirror-1.jpg"
+    },
+    {
+        name: "Mirror 2",
+        price: 299.99,
+        description: "Expensive Mirror",
+        imageSrc: "../images/products/mirror-2.jpg"
+    },
+    {
+        name: "Mirror 3",
+        price: 169.99,
+        description: "Cheap Mirror",
+        imageSrc: "../images/products/mirror-3.jpg"
     }
 ];
 
 const desksList = [
     {
-        name: "desk 1",
+        name: "Desk 1",
         price: 219.99,
-        description: "average desk",
+        description: "Average Desk",
         imageSrc: "../images/products/desk-1.jpg"
     },
     {
-        name: "desk 2",
+        name: "Desk 2",
         price: 299.99,
-        description: "expensive desk",
+        description: "Expensive Desk",
         imageSrc: "../images/products/desk-2.jpg"
     },
     {
-        name: "desk 3",
+        name: "Desk 3",
         price: 169.99,
-        description: "cheap desk",
+        description: "Cheap Desk",
         imageSrc: "../images/products/desk-3.jpg"
+    }
+];
+
+const storageCabinetsList = [
+    {
+        name: "Storage Cabinet 1",
+        price: 219.99,
+        description: "Average Storage Cabinet",
+        imageSrc: "../images/products/storage-cabinet-1.jpg"
+    },
+    {
+        name: "Storage Cabinet 2",
+        price: 299.99,
+        description: "Expensive Storage Cabinet",
+        imageSrc: "../images/products/storage-cabinet-2.jpg"
+    },
+    {
+        name: "Storage Cabinet 3",
+        price: 169.99,
+        description: "Cheap Storage Cabinet",
+        imageSrc: "../images/products/storage-cabinet-3.jpg"
     }
 ];
 
 const bookcasesList = [
     {
-        name: "bookcase 1",
+        name: "Bookcase 1",
         price: 219.99,
-        description: "average bookcase",
+        description: "Average Bookcase",
         imageSrc: "../images/products/bookcase-1.jpg"
     },
     {
-        name: "bookcase 2",
+        name: "Bookcase 2",
         price: 299.99,
-        description: "expensive bookcase",
+        description: "Expensive Bookcase",
         imageSrc: "../images/products/bookcase-2.jpg"
     },
     {
-        name: "bookcase 3",
+        name: "Bookcase 3",
         price: 169.99,
-        description: "cheap bookcase",
+        description: "Cheap Bookcase",
         imageSrc: "../images/products/bookcase-3.jpg"
     }
 ];
 
 /*
-Functions
+    Functions
 */
+
+//help function
 const showDivs = function(){
     leftDiv.style.display = "inline-block";
     centerDiv.style.display = "inline-block";
     rightDiv.style.display = "inline-block";
 };
 
+/*
+    Loading Items
+*/
 const loadSofas = function(){
     
     threeDivs.leftProductName.innerText = sofasList[0].name;
@@ -415,6 +389,26 @@ const loadSleeperSofas = function(){
     showDivs();
 };
 
+const loadOttomanChairs = function(){
+    
+    threeDivs.leftProductName.innerText = ottomanChairsList[0].name;
+    threeDivs.leftProductPrice.innerText = ottomanChairsList[0].price;
+    threeDivs.leftProductDescription.innerText = ottomanChairsList[0].description;
+    threeDivs.leftProductImg.src = ottomanChairsList[0].imageSrc;
+    
+    threeDivs.centerProductName.innerText = ottomanChairsList[1].name;
+    threeDivs.centerProductPrice.innerText = ottomanChairsList[1].price;
+    threeDivs.centerProductDescription.innerText = ottomanChairsList[1].description;
+    threeDivs.centerProductImg.src = ottomanChairsList[1].imageSrc;
+    
+    threeDivs.rightProductName.innerText = ottomanChairsList[2].name;
+    threeDivs.rightProductPrice.innerText = ottomanChairsList[2].price;
+    threeDivs.rightProductDescription.innerText = ottomanChairsList[2].description;
+    threeDivs.rightProductImg.src = ottomanChairsList[2].imageSrc;
+    
+    showDivs();
+};
+
 const loadDiningTables = function(){
     
     threeDivs.leftProductName.innerText = diningTablesList[0].name;
@@ -433,7 +427,47 @@ const loadDiningTables = function(){
     threeDivs.rightProductImg.src = diningTablesList[2].imageSrc;
     
     showDivs();
-};     
+};
+
+const loadArmChairs = function(){
+    
+    threeDivs.leftProductName.innerText = armChairsList[0].name;
+    threeDivs.leftProductPrice.innerText = armChairsList[0].price;
+    threeDivs.leftProductDescription.innerText = armChairsList[0].description;
+    threeDivs.leftProductImg.src = armChairsList[0].imageSrc;
+    
+    threeDivs.centerProductName.innerText = armChairsList[1].name;
+    threeDivs.centerProductPrice.innerText = armChairsList[1].price;
+    threeDivs.centerProductDescription.innerText = armChairsList[1].description;
+    threeDivs.centerProductImg.src = armChairsList[1].imageSrc;
+    
+    threeDivs.rightProductName.innerText = armChairsList[2].name;
+    threeDivs.rightProductPrice.innerText = armChairsList[2].price;
+    threeDivs.rightProductDescription.innerText = armChairsList[2].description;
+    threeDivs.rightProductImg.src = armChairsList[2].imageSrc;
+    
+    showDivs();
+};
+
+const loadConsoleTables = function(){
+    
+    threeDivs.leftProductName.innerText = consoleTablesList[0].name;
+    threeDivs.leftProductPrice.innerText = consoleTablesList[0].price;
+    threeDivs.leftProductDescription.innerText = consoleTablesList[0].description;
+    threeDivs.leftProductImg.src = consoleTablesList[0].imageSrc;
+    
+    threeDivs.centerProductName.innerText = consoleTablesList[1].name;
+    threeDivs.centerProductPrice.innerText = consoleTablesList[1].price;
+    threeDivs.centerProductDescription.innerText = consoleTablesList[1].description;
+    threeDivs.centerProductImg.src = consoleTablesList[1].imageSrc;
+    
+    threeDivs.rightProductName.innerText = consoleTablesList[2].name;
+    threeDivs.rightProductPrice.innerText = consoleTablesList[2].price;
+    threeDivs.rightProductDescription.innerText = consoleTablesList[2].description;
+    threeDivs.rightProductImg.src = consoleTablesList[2].imageSrc;
+    
+    showDivs();
+};
 
 const loadBeds = function(){
     
@@ -451,6 +485,46 @@ const loadBeds = function(){
     threeDivs.rightProductPrice.innerText = bedsList[2].price;
     threeDivs.rightProductDescription.innerText = bedsList[2].description;
     threeDivs.rightProductImg.src = bedsList[2].imageSrc;
+    
+    showDivs();
+};
+
+const loadNightstands = function(){
+    
+    threeDivs.leftProductName.innerText = nightstandsList[0].name;
+    threeDivs.leftProductPrice.innerText = nightstandsList[0].price;
+    threeDivs.leftProductDescription.innerText = nightstandsList[0].description;
+    threeDivs.leftProductImg.src = nightstandsList[0].imageSrc;
+    
+    threeDivs.centerProductName.innerText = nightstandsList[1].name;
+    threeDivs.centerProductPrice.innerText = nightstandsList[1].price;
+    threeDivs.centerProductDescription.innerText = nightstandsList[1].description;
+    threeDivs.centerProductImg.src = nightstandsList[1].imageSrc;
+    
+    threeDivs.rightProductName.innerText = nightstandsList[2].name;
+    threeDivs.rightProductPrice.innerText = nightstandsList[2].price;
+    threeDivs.rightProductDescription.innerText = nightstandsList[2].description;
+    threeDivs.rightProductImg.src = nightstandsList[2].imageSrc;
+    
+    showDivs();
+};
+
+const loadMirrors = function(){
+    
+    threeDivs.leftProductName.innerText = mirrorsList[0].name;
+    threeDivs.leftProductPrice.innerText = mirrorsList[0].price;
+    threeDivs.leftProductDescription.innerText = mirrorsList[0].description;
+    threeDivs.leftProductImg.src = mirrorsList[0].imageSrc;
+    
+    threeDivs.centerProductName.innerText = mirrorsList[1].name;
+    threeDivs.centerProductPrice.innerText = mirrorsList[1].price;
+    threeDivs.centerProductDescription.innerText = mirrorsList[1].description;
+    threeDivs.centerProductImg.src = mirrorsList[1].imageSrc;
+    
+    threeDivs.rightProductName.innerText = mirrorsList[2].name;
+    threeDivs.rightProductPrice.innerText = mirrorsList[2].price;
+    threeDivs.rightProductDescription.innerText = mirrorsList[2].description;
+    threeDivs.rightProductImg.src = mirrorsList[2].imageSrc;
     
     showDivs();
 };
@@ -515,12 +589,21 @@ const loadBookcases = function(){
     showDivs();
 };
 
+/*
+    Event Listeners
+*/
 sofas.addEventListener("click", loadSofas);
 sectionalSofas.addEventListener("click", loadSectionalSofas);
+sleeperSofas.addEventListener("click", loadSleeperSofas);
+ottomanChairs.addEventListener("click", loadOttomanChairs);
 
 diningTables.addEventListener("click", loadDiningTables);
+armChairs.addEventListener("click", loadArmChairs);
+consoleTables.addEventListener("click", loadConsoleTables);
 
 beds.addEventListener("click", loadBeds);
+nightstands.addEventListener("click", loadNightstands);
+mirrors.addEventListener("click", loadMirrors);
 
 desks.addEventListener("click", loadDesks);
 storageCabinets.addEventListener("click", loadStorageCabinets);
