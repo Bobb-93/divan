@@ -107,7 +107,7 @@ main div img{
 }
 
 #productsLists>ul>li{
-    width: 15em;
+    width: 25em;
 }
 
 #livingRoom:hover ul, #diningRoom:hover ul, #bedroom:hover ul, #office:hover ul{
