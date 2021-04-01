@@ -158,13 +158,13 @@ const armChairsList = [
     },
     {
         name: "Armchair 2",
-        price: 299.99,
+        price: 279.99,
         description: "Expensive Armchair",
         imageSrc: "../images/products/Armchair-2.jpg"
     },
     {
         name: "Armchair 3",
-        price: 169.99,
+        price: 189.99,
         description: "Cheap Armchair",
         imageSrc: "../images/products/Armchair-3.jpg"
     }
@@ -173,19 +173,19 @@ const armChairsList = [
 const consoleTablesList = [
     {
         name: "Console Table 1",
-        price: 219.99,
+        price: 209.99,
         description: "Average Console Table",
         imageSrc: "../images/products/console-table-1.jpg"
     },
     {
         name: "Console Table 2",
-        price: 299.99,
+        price: 399.99,
         description: "Expensive Console Table",
         imageSrc: "../images/products/console-table-2.jpg"
     },
     {
         name: "Console Table 3",
-        price: 169.99,
+        price: 179.99,
         description: "Cheap Console Table",
         imageSrc: "../images/products/console-table-3.jpg"
     }
@@ -278,7 +278,7 @@ const desksList = [
 const storageCabinetsList = [
     {
         name: "Storage Cabinet 1",
-        price: 219.99,
+        price: 259.99,
         description: "Average Storage Cabinet",
         imageSrc: "../images/products/storage-cabinet-1.jpg"
     },
@@ -611,7 +611,7 @@ const loadDesks = function(){
 };
 
 const loadBookcases = function(){
-    
+    console.log('bookcases!');
     threeDivs.leftProductName.innerText = bookcasesList[0].name;
     threeDivs.leftProductPrice.innerText = bookcasesList[0].price;
     threeDivs.leftDataPrice.setAttribute("data-price", bookcasesList[0].price);

@@ -70,47 +70,44 @@ main div img{
 
 #livingRoom{
     padding-top: 2em;
-    position: relative;
 }
 
 #diningRoom{
     padding-top: .5em;
-    position: relative;
 }
 
 #bedroom{
     padding-top: .5em;
-    position: relative;
 }
 
 #office{
     padding-top: .5em;
-    position: relative;
 }
 
 #livingRoom ul, #diningRoom ul, #bedroom ul, #office ul{
     position: absolute;
     left: 8.5em;
     top: 0em;
+    font-family: Georgia,'Times New Roman',serif;  
 }
 
 #diningRoom ul{
-    top: 0.5em;
+    top: 2.5em;
 }
 
 #bedroom ul{
-    top: 0.5em;
+    top: 5.5em;
 }
 
 #office ul{
-    top: 0.5em;
+    top: 7.5em;
 }
 
 #productsLists>ul>li{
     width: 25em;
 }
 
-#livingRoom:hover ul, #diningRoom:hover ul, #bedroom:hover ul, #office:hover ul{
+#livingRoom:hover>ul, #diningRoom:hover>ul, #bedroom:hover>ul, #office:hover>ul{
     display: block;
 }
 
@@ -118,3 +115,7 @@ main div img{
     background-color: #D5454B;
     color: #512727;
 }
+/* 
+#productsLists>ul>li>ul>li{
+    display: block;
+} */
