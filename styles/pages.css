@@ -1,8 +1,8 @@
-body{
+body {
     position: relative;
 }
 
-main{
+main {
     position: relative;
     /* float: none; */
     /* left: 0;
@@ -11,46 +11,55 @@ main{
     width: 95vw;
 }
 
-header{
+header {
     width: 100%;
-    height: 11%;
+    height: 8%;
+
 }
 
-nav{
+nav {
     position: relative;
     width: 100%;
     height: 2.6em;
     background-color: #CB171E;
 }
 
-li{
+li {
     display: inline-block;
 }
 
-h1{
-    position: absolute;
-    top: 2.4em;
-    left: 21em;
+h1 {
+    /* position: absolute; */
+    /* left: 25em; */
+    margin: 0 auto;
+    margin-top: 25px;
+
+    text-align: center;
     font-family: sans-serif;
 }
 
-hr{
+header h1 {
+    padding-top: 0.2em;
+    padding-bottom: 0.1em;
+}
+
+hr {
     width: 85vw;
     margin-left: 7em;
 }
 
-.clearfix{
+.clearfix {
     clear: both;
 }
 
-.pages-box{
+.pages-box {
     margin-left: 3.25em;
     padding-left: 0.5em;
 }
 
-nav>ul{
+nav>ul {
     position: absolute;
-    top: 0; 
+    top: 0;
     left: 0;
     margin: 0 auto;
     width: 100%;
@@ -58,22 +67,22 @@ nav>ul{
 
 }
 
-nav>ul>li{
+nav>ul>li {
     float: left;
-    width: 16.6%;
+    width: 10.6%;
     z-index: 10;
     cursor: pointer;
 }
 
-.fa-facebook-square:hover{
+.fa-facebook-square:hover {
     color: #3B579D;
 }
 
-.fa-linkedin:hover{
+.fa-linkedin:hover {
     color: #0A66C2;
 }
 
-#logo{
+#logo {
     position: absolute;
     top: 3.25em;
     left: 7.5em;
@@ -82,17 +91,17 @@ nav>ul>li{
     z-index: 1;
 }
 
-#services li{
+#services li {
     text-align: left;
 }
 
 
-#logo:hover{
+#logo:hover {
     opacity: 0.8;
     cursor: pointer;
 }
 
-#services:hover ul{
+#services:hover ul {
     display: inline-block;
 }
 
@@ -143,4 +152,3 @@ nav>ul>li{
     top: 1em; 
 }
 */
-

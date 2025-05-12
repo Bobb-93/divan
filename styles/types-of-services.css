@@ -1,4 +1,4 @@
-section{
+section {
     position: absolute;
     left: 38em;
     height: 6em;
@@ -18,56 +18,54 @@ section{
     text-align: right;
 } */
 
-h2{
+h2 {
     text-align: center;
     margin-top: .2em;
 }
 
-section>img{
+section>img {
     height: 70%;
     width: 40%;
     padding: 1em 1em 0em 1em;
 }
 
-section>p{
+section>p {
     padding: 0em 1em 1em;
 }
 
-section img{
+section img {
     height: 60px;
     width: 90px;
 }
 
-.section-1{
+.section-1 {
     top: 3em;
 }
 
-.section-2{
+.section-2 {
     top: 9em;
 }
 
-.section-3{
+.section-3 {
     top: 15em;
 }
 
-.section-4{
+.section-4 {
     top: 21em;
 }
 
-.section-5{
+.section-5 {
     top: 27em;
 }
 
-.left>img{
+.left>img {
     float: left;
 }
 
-.right>img{
+.right>img {
     float: right;
 }
 
-section:hover{
+section:hover {
     opacity: 0.8;
 }
-
-

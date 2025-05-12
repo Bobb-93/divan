@@ -1,4 +1,4 @@
-body{          
+body {
     background-image: radial-gradient(circle at center, #a8a19f 3px, transparent 0), url("../images/home/modern-scandinavian-home-interior.png");
     /* width: 1245px; */
     background-size: 1em 1em, 100vw 100vh;
@@ -6,57 +6,57 @@ body{
     background-position: 0 0, 0 0;
 }
 
-nav{
+nav {
     position: fixed;
     top: 9em;
     left: 1.9em;
-    width: 10em;  
+    width: 10em;
     height: 22em;
 }
 
-nav li{
+nav li {
     text-align: left;
     padding-left: 1em;
     padding-bottom: .55em;
 }
 
-.fa-facebook-square{
+.fa-facebook-square {
     margin-left: 50px;
     margin-top: 25px;
     color: #3B579D;
 }
 
-.fa-twitter-square{
+.fa-twitter-square {
     color: #58CCFF;
 }
 
-.fa-pinterest-square{
+.fa-pinterest-square {
     color: #D51620;
 }
 
-.fa-youtube-square{
+.fa-youtube-square {
     color: #f00;
     margin-left: 50px;
 
 }
 
-.fa-google-plus-square{
+.fa-google-plus-square {
     color: #DD4B39;
 }
 
-.fa-instagram-square{
+.fa-instagram-square {
     color: #A2785A;
 }
 
-nav>ul>li:first-child{
+nav>ul>li:first-child {
     padding-top: 40px;
 }
 
-nav>ul>li:last-child{
+nav>ul>li:last-child {
     padding-bottom: 11.9em;
 }
 
-#logo{
+#logo {
     position: absolute;
     left: 1.9em;
     top: 3em;
@@ -65,16 +65,16 @@ nav>ul>li:last-child{
     background-color: #555;
 }
 
-#art-you-live-in{
+#art-you-live-in {
     background-image: url("../images/home/we-make-art-you-live-in.png");
     position: absolute;
-    left: 14em;
+    left: 30em;
     top: 3em;
     height: 121px;
     width: 990px;
 }
 
-#social-media{
+#social-media {
     background-color: #DFDCDA;
     position: absolute;
     bottom: 3.5em;
@@ -83,72 +83,69 @@ nav>ul>li:last-child{
     width: 160px;
 }
 
-#discover-more{
+#discover-more {
     background-image: url("../images/home/discover-more.png");
     position: absolute;
     bottom: 6em;
-    left: 39em;
+    left: 55em;
     height: 15px;
     width: 207px;
 }
 
-#down-red-arrow{
+#down-red-arrow {
     background-image: url("../images/home/down-red-arrow.png");
     position: absolute;
     bottom: 3.5em;
-    left: 44em;
+    left: 60em;
     height: 26px;
     width: 53px;
 }
 
-#logo img{
+#logo img {
     margin-left: 14px;
     margin-top: 5px;
 }
 
-#social-media a{
+#social-media a {
     margin-right: 0.1em;
     font-size: 1.5em;
 }
 
 /* МЕНЮ */
-#services{
+#services {
     position: relative;
 }
 
-#services:hover ul{
+#services:hover ul {
     display: block;
 }
 
-#services ul{
+#services ul {
     position: absolute;
     left: 10em;
     top: 0;
 }
 
-#services li{
+#services li {
     font-size: 1em;
 }
 
-.index-box{
+.index-box {
     padding: 0;
 }
 
-#consulting{
+#consulting {
     top: 0em;
 }
 
-#furnishing{
+#furnishing {
     top: 2em;
 }
 
-#procurement{
+#procurement {
     top: 4em;
 }
 
-#interior-detailing{
+#interior-detailing {
     top: 6em;
 }
-
-
-

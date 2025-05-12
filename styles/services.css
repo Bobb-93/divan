@@ -3,34 +3,34 @@
     src: url("../fonts/BakerBook.ttf");
 }
 
-body{
+body {
     overflow: visible;
 }
 
-h2{
+h2 {
     position: fixed;
     top: 21.5em;
-    font-family:KabelBook, sans-serif;
+    font-family: KabelBook, sans-serif;
 }
 
-a{
-    text-decoration: none;    
+a {
+    text-decoration: none;
     color: #000;
 }
 
-div{
-    display: inline-block;   
+div {
+    display: inline-block;
 }
 
-main p{
+main p {
     position: fixed;
     top: 9em;
-    left: 6em;
+    left: 30em;
     text-align: center;
     font-family: KabelBook, sans-serif;
 }
 
-div li{
+div li {
     display: block;
     text-align: left;
     margin-right: initial;
@@ -39,7 +39,7 @@ div li{
     font-family: KabelBook, sans-serif;
 }
 
-.background-image{
+.background-image {
     background-repeat: no-repeat;
     /* width: 87%; */
     /* height: 87%; */
@@ -48,81 +48,91 @@ div li{
     height: 651px;
 }
 
-#leftmost{
+#leftmost {
     background-image: url("../images/services/Scandinavian-Design-1.png");
     width: 431px;
-    left: 5em;
+    left: 25em;
 }
 
-#center{
+#center {
     background-image: url("../images/services/Scandinavian-Design-2.png");
     width: 317px;
     height: 396px;
-    left: 34em;
+    left: 54em;
 }
 
-#rightmost{
+#rightmost {
     background-image: url("../images/services/Scandinavian-Design-3.png");
     width: 416px;
-    left: 62em; 
+    left: 82em;
 }
 
-.type-of-service{
+.type-of-service {
     position: fixed;
     top: 37.5em;
 }
 
-#consulting-div{
-    left: 12em;
+#consulting-div {
+    left: 42em;
 }
 
-#consulting-heading{
-    left: 6.5em;
+#consulting-heading {
+    left: 26.5em;
 }
 
-#furnishing-div{
-    left: 30.5em;
+#furnishing-div {
+    left: 60.5em;
 }
 
-#furnishing-heading{
-    left: 19em;
+#furnishing-heading {
+    left: 39em;
 }
 
-#procurement-div{
-    left: 50em;
+#procurement-div {
+    left: 80em;
 }
 
-#procurement-heading{
-    left: 32em;
+#procurement-heading {
+    left: 52em;
 }
 
-#interior-detailing-div{
-    left: 75em;
+#interior-detailing-div {
+    left: 105em;
 }
 
-#interior-detailing-heading{
-    left: 48.5em;
+#interior-detailing-heading {
+    left: 68.5em;
 }
 
-#lists-of-services{
+#lists-of-services {
     background-image: url("../images/services/Rectangle-5.png");
     position: fixed;
     top: 32em;
-    left: 8em;
+    left: 35em;
     width: 1200px;
     height: 183px;
     background-color: #fff;
 }
 
-#lists-of-services{
+#lists-of-services {
     font-size: 0.85em;
 }
 
-#consulting-div li a, #furnishing-div li a, #procurement-div li a, #interior-detailing-div li a{
+#consulting-div li a,
+#furnishing-div li a,
+#procurement-div li a,
+#interior-detailing-div li a {
     font-size: inherit;
 }
 
-#consulting-div h2:hover, #furnishing-div h2:hover, #procurement-div h2:hover, #interior-detailing-div h2:hover, #consulting-div li a:hover, #furnishing-div li a:hover, #procurement-div li a:hover, #interior-detailing-div li a:hover{
+#consulting-div h2:hover,
+#furnishing-div h2:hover,
+#procurement-div h2:hover,
+#interior-detailing-div h2:hover,
+#consulting-div li a:hover,
+#furnishing-div li a:hover,
+#procurement-div li a:hover,
+#interior-detailing-div li a:hover {
     text-decoration: underline;
     opacity: 0.8;
 }

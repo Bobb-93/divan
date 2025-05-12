@@ -1,6 +1,6 @@
-*{
-    padding:0;
-    margin:0;
+* {
+    padding: 0;
+    margin: 0;
 }
 
 @font-face {
@@ -13,79 +13,130 @@
     src: url("../fonts/LRT-Oksana.ttf");
 }
 
-body{
+body {
     position: relative;
     width: 100vw;
     height: 100vh;
     font-size: 16px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
-nav{
+nav {
     background-color: #CB171E;
+    min-height: 2.6em;
+    /* Make sure it has space */
+    /* overflow: hidden; */
+    /* Contain floated children */
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
-li{
+li {
     text-align: center;
     text-transform: uppercase;
     font-family: vrinda, sans-serif;
 }
 
-footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
+footer {
+    /* position: relative; */
     width: 100%;
-    height: 3em;
+    padding: 1em 0;
     text-align: center;
-    font-family: LRT Oksana, sans-serif !important;
+    font-family: LRT Oksana, sans-serif;
     background-color: #7b7a7a;
     color: #fff;
     box-sizing: border-box;
+    margin-top: auto;
 }
 
-footer p{
+footer p {
     margin-top: 1.3em;
 }
 
-li a{
+li a {
     text-decoration: none;
     font-size: 2em;
     color: #050505;
 }
 
-ul>li>ul{
+ul>li>ul {
     display: none;
 }
 
-i:hover{
+i:hover {
     opacity: 0.8;
 }
 
-.box{
+.box {
     width: 15em;
     background-color: #CB171E;
     transition: all .5s ease-out;
 }
 
 /* link to fit li */
-.box a{
+.box a {
     display: block;
 }
 
-#logo-2{
-    position: absolute;
-    bottom: 0.4em;
-    left: 13.5em;
+#logo-2 {
+    display: inline-block;
+    /* margin-bottom: 1em; */
     height: 38px;
     width: 75px;
 }
 
-#consulting:hover, #furnishing:hover, #procurement:hover, #interior-detailing:hover{
+#consulting:hover,
+#furnishing:hover,
+#procurement:hover,
+#interior-detailing:hover {
     background-color: #D5454B;
     color: #512727;
+}
+
+@media (max-width: 768px) {
+    main {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .product-item {
+        display: block;
+        margin: 1em auto;
+        width: 90%;
+    }
+
+    .product-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    select,
+    .btn {
+        width: 100%;
+        margin-top: 0.5em;
+    }
+
+    #cart,
+    #checkout-modal .modal-content,
+    #payment-modal .modal-content {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
 }
